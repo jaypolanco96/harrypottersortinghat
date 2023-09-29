@@ -37,9 +37,9 @@ export default function Home() {
             <p style={{ color: "#ffffff" }}>
               Disclaimer: Welcome to our magical Sorting Hat test! This quiz,
               inspired by the world of Harry Potter, is for entertainment
-              purposes only. It's not an official Pottermore test. The results
+              purposes only. Its not an official Pottermore test. The results
               are meant to add a touch of wizardry to your day! Embrace your
-              house, but remember, it's all in good fun. Enjoy your journey at
+              house, but remember, its all in good fun. Enjoy your journey at
               Hogwarts!
             </p>
           </code>
@@ -160,7 +160,7 @@ export default function Home() {
         </div>
         <div className={styles.questions}>
           <h1 style={{ color: "#ffffff" }}>
-            7. What's your favorite way to spend a rainy day?
+            7. Whats your favorite way to spend a rainy day?
           </h1>
           <button id={styles.answer} onClick={() => setRavenC(ravenclaw - 2)}>
             <p style={{ color: "#ffffff", fontSize: "2.5vh" }}>
@@ -198,7 +198,7 @@ export default function Home() {
         </div>
         <div className={styles.questions}>
           <h1 style={{ color: "#ffffff" }}>
-            9. What's your approach to dealing with a difficult adversary?
+            9. Whats your approach to dealing with a difficult adversary?
           </h1>
           <button id={styles.answer} onClick={() => setHuffleP(hufflepuff - 2)}>
             <p style={{ color: "#ffffff", fontSize: "2.5vh" }}>
@@ -218,7 +218,7 @@ export default function Home() {
         </div>
         <div className={styles.questions}>
           <h1 style={{ color: "#ffffff" }}>
-            10. What's your greatest desire in life?
+            10. Whats your greatest desire in life?
           </h1>
           <button id={styles.answer} onClick={() => setHuffleP(hufflepuff - 2)}>
             <p style={{ color: "#ffffff", fontSize: "2.5vh" }}>
