@@ -1,95 +1,247 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+"use client";
+import Image from "next/image";
+import styles from "./page.module.css";
+import React, { useState } from "react";
 
 export default function Home() {
+  const [hufflepuff, setHuffleP] = useState(0);
+  const [ravenclaw, setRavenC] = useState(0);
+  const [gryffindor, setGryffindor] = useState(0);
+  const [slytherin, setSlytherin] = useState(0);
+
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.js</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+    <div>
+      <div id={styles.stars}></div>
+      <div id={styles.stars2}></div>
+      <div id={styles.stars3}></div>
+      <div className={styles.container}>
+        <div className={styles.srtnghat}>
+          <Image
+            src="/sh.gif"
+            width={360}
+            height={360}
+            alt="public/sh.gif"
+            style={{ borderRadius: "19px" }}
+          />
+        </div>
+        <div className={styles.start}>
+          <button id={styles.strtbtn}></button>
+        </div>
+
+        <div className={styles.footer}>
+          <code>
+            <p style={{ color: "#ffffff" }}>
+              Developed By:
+              Jordan Polanco
+            </p>
+            <p style={{ color: "#ffffff" }}>
+              Disclaimer: Welcome to our magical Sorting Hat test! This quiz,
+              inspired by the world of Harry Potter, is for entertainment
+              purposes only. It's not an official Pottermore test. The results
+              are meant to add a touch of wizardry to your day! Embrace your
+              house, but remember, it's all in good fun. Enjoy your journey at
+              Hogwarts!
+            </p>
+          </code>
+        </div>
+        <div className={styles.questions}>
+          <h1 style={{ color: "#ffffff" }}>
+            1. When faced with a difficult problem, which approach would you be
+            more likely to take?
+          </h1>
+          <button id={styles.answer} onClick={() => setRavenC(ravenclaw - 2)}>
+            <p style={{ color: "#ffffff", fontSize: "2.5vh" }}>
+              A&#41; Use my intelligence and wit to find a clever solution.
+            </p>
+          </button>
+          <h3 style={{ color: "#ffffff" }}>Or</h3>
+          <button
+            id={styles.answer}
+            onClick={() => setGryffindor(gryffindor - 2)}
           >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+            <p style={{ color: "#ffffff", fontSize: "2.5vh" }}>
+              B&#41; Trust my instincts and rely on my courage to face it
+              head-on.{" "}
+            </p>
+          </button>
+        </div>
+        <div className={styles.questions}>
+          <h1 style={{ color: "#ffffff" }}>
+            2. What kind of adventure would you most enjoy?
+          </h1>
+          <button id={styles.answer} onClick={() => setHuffleP(hufflepuff - 2)}>
+            <p style={{ color: "#ffffff", fontSize: "2.5vh" }}>
+              A&#41; A mysterious journey through an ancient forest.
+            </p>
+          </button>
+          <h3 style={{ color: "#ffffff" }}>Or</h3>
+          <button
+            id={styles.answer}
+            onClick={() => setGryffindor(gryffindor - 2)}
+          >
+            <p style={{ color: "#ffffff", fontSize: "2.5vh" }}>
+              B&#41; An exciting quest full of danger and challenges.
+            </p>
+          </button>
+        </div>
+        <div className={styles.questions}>
+          <h1 style={{ color: "#ffffff" }}>
+            3. What trait do you value most in a friend?
+          </h1>
+          <button id={styles.answer} onClick={() => setHuffleP(hufflepuff - 2)}>
+            <p style={{ color: "#ffffff", fontSize: "2.5vh" }}>
+              A&#41; Loyalty and unwavering support.
+            </p>
+          </button>
+          <h3 style={{ color: "#ffffff" }}>Or</h3>
+          <button id={styles.answer} onClick={() => setRavenC(ravenclaw - 2)}>
+            <p style={{ color: "#ffffff", fontSize: "2.5vh" }}>
+              B&#41; Intelligence and the ability to challenge me
+              intellectually.{" "}
+            </p>
+          </button>
+        </div>
+        <div className={styles.questions}>
+          <h1 style={{ color: "#ffffff" }}>
+            4. In a group project, which role would you naturally take on?
+          </h1>
+          <button id={styles.answer} onClick={() => setHuffleP(hufflepuff - 2)}>
+            <p style={{ color: "#ffffff", fontSize: "2.5vh" }}>
+              A&#41; Ensuring everyone gets along and feels included.
+            </p>
+          </button>
+          <h3 style={{ color: "#ffffff" }}>Or</h3>
+          <button
+            id={styles.answer}
+            onClick={() => setGryffindor(gryffindor - 2)}
+          >
+            <p style={{ color: "#ffffff", fontSize: "2.5vh" }}>
+              B&#41; Taking the lead and organizing the team.{" "}
+            </p>
+          </button>
+        </div>
+        <div className={styles.questions}>
+          <h1 style={{ color: "#ffffff" }}>
+            5. What would you do if you found an old, dusty book with no title?
+          </h1>
+          <button id={styles.answer} onClick={() => setRavenC(ravenclaw - 2)}>
+            <p style={{ color: "#ffffff", fontSize: "2.5vh" }}>
+              A&#41; Take it to the library to see if anyone knows its history.
+            </p>
+          </button>
+          <h3 style={{ color: "#ffffff" }}>Or</h3>
+          <button
+            id={styles.answer}
+            onClick={() => setSlytherin(slytherin - 2)}
+          >
+            <p style={{ color: "#ffffff", fontSize: "2.5vh" }}>
+              B&#41; Open it to see if there are any hidden secrets inside.{" "}
+            </p>
+          </button>
+        </div>
+        <div className={styles.questions}>
+          <h1 style={{ color: "#ffffff" }}>
+            6. Which quality do you find most admirable in a wizard or witch?
+          </h1>
+          <button id={styles.answer} onClick={() => setHuffleP(hufflepuff - 2)}>
+            <p style={{ color: "#ffffff", fontSize: "2.5vh" }}>
+              A&#41; Kindness and compassion for others.
+            </p>
+          </button>
+          <h3 style={{ color: "#ffffff" }}>Or</h3>
+          <button
+            id={styles.answer}
+            onClick={() => setSlytherin(slytherin - 2)}
+          >
+            <p style={{ color: "#ffffff", fontSize: "2.5vh" }}>
+              B&#41; Ambition and a desire for greatness.{" "}
+            </p>
+          </button>
+        </div>
+        <div className={styles.questions}>
+          <h1 style={{ color: "#ffffff" }}>
+            7. What's your favorite way to spend a rainy day?
+          </h1>
+          <button id={styles.answer} onClick={() => setRavenC(ravenclaw - 2)}>
+            <p style={{ color: "#ffffff", fontSize: "2.5vh" }}>
+              A&#41; Curled up with a good book in a cozy corner.
+            </p>
+          </button>
+          <h3 style={{ color: "#ffffff" }}>Or</h3>
+          <button
+            id={styles.answer}
+            onClick={() => setGryffindor(gryffindor - 2)}
+          >
+            <p style={{ color: "#ffffff", fontSize: "2.5vh" }}>
+              B&#41; Exploring new places or trying something adventurous.{" "}
+            </p>
+          </button>
+        </div>
+        <div className={styles.questions}>
+          <h1 style={{ color: "#ffffff" }}>
+            8. What do you value most in a magical object?
+          </h1>
+          <button id={styles.answer} onClick={() => setHuffleP(hufflepuff - 2)}>
+            <p style={{ color: "#ffffff", fontSize: "2.5vh" }}>
+              A&#41; Its ability to bring joy and happiness to people.
+            </p>
+          </button>
+          <h3 style={{ color: "#ffffff" }}>Or</h3>
+          <button
+            id={styles.answer}
+            onClick={() => setSlytherin(slytherin - 2)}
+          >
+            <p style={{ color: "#ffffff", fontSize: "2.5vh" }}>
+              B&#41; Its power and potential for achieving great feats.{" "}
+            </p>
+          </button>
+        </div>
+        <div className={styles.questions}>
+          <h1 style={{ color: "#ffffff" }}>
+            9. What's your approach to dealing with a difficult adversary?
+          </h1>
+          <button id={styles.answer} onClick={() => setHuffleP(hufflepuff - 2)}>
+            <p style={{ color: "#ffffff", fontSize: "2.5vh" }}>
+              A&#41; Trying to find a peaceful resolution through negotiation.
+            </p>
+          </button>
+          <h3 style={{ color: "#ffffff" }}>Or</h3>
+          <button
+            id={styles.answer}
+            onClick={() => setGryffindor(gryffindor - 2)}
+          >
+            <p style={{ color: "#ffffff", fontSize: "2.5vh" }}>
+              B&#41; Standing up and facing the challenge head-on, no matter the
+              risks.{" "}
+            </p>
+          </button>
+        </div>
+        <div className={styles.questions}>
+          <h1 style={{ color: "#ffffff" }}>
+            10. What's your greatest desire in life?
+          </h1>
+          <button id={styles.answer} onClick={() => setHuffleP(hufflepuff - 2)}>
+            <p style={{ color: "#ffffff", fontSize: "2.5vh" }}>
+              A&#41; To make lasting, meaningful connections with others.
+            </p>
+          </button>
+          <h3 style={{ color: "#ffffff" }}>Or</h3>
+          <button
+            id={styles.answer}
+            onClick={() => setSlytherin(slytherin - 2)}
+          >
+            <p style={{ color: "#ffffff", fontSize: "2.5vh" }}>
+              B&#41; To achieve greatness and leave a lasting legacy.{" "}
+            </p>
+          </button>
+        </div>
+        <div className={styles.results}>
+          <p style={{ color: "#ffffff" }}>Gryffindor: {gryffindor}</p>
+          <p style={{ color: "#ffffff" }}>Ravenclaw: {ravenclaw}</p>
+          <p style={{ color: "#ffffff" }}>Hufflepuff: {hufflepuff}</p>
+          <p style={{ color: "#ffffff" }}>Slytherin: {slytherin}</p>
         </div>
       </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  )
+    </div>
+  );
 }
