@@ -25,8 +25,8 @@ export default function Home() {
             <button id={styles.strtbtn}></button>
           </Link>
           <code style={{margin: "5vw", color: "#b7813fff"}}>
-            By clicking "Start', you confirm reading and agreeing to the
-            disclaimer on this page. Proceed with acknowledgment.{" "}
+            By clicking &quot;Start&quot;, you confirm reading and agreeing to the
+            disclaimer on this page. Proceed with acknowledgment.
           </code>
         </div>
         <div className={styles.footer}>
@@ -50,7 +50,7 @@ export default function Home() {
               assessments. It is not a substitute for seeking advice from a
               licensed professional. 6. Age Restrictions: This test is suitable
               for all ages, but younger participants may require parental
-              guidance due to the website's Harry Potter theme. 7. Respect and
+              guidance due to the website&apos;s Harry Potter theme. 7. Respect and
               Kindness: We encourage users to be respectful and kind in all
               interactions related to this test. Any form of harassment,
               discrimination, or inappropriate behavior will not be tolerated.
