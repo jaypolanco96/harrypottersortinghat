@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800&display=swap");
+
 .container {
   display: flex;
   flex-direction: column;
@@ -24,9 +26,6 @@
   width: 30vh;
   border: 3px solid #b7813fff;
   border-radius: 19px;
-}
-
-#strtbtn:hover {
   cursor: pointer;
 }
 
@@ -35,6 +34,10 @@
   flex-direction: column;
   align-items: center;
   margin: 0 5vw 5vw 5vw;
+}
+
+#home {
+  font-family: "Poppins";
 }
 
 .questions {
@@ -50,13 +53,20 @@
 
 #answer {
   border-style: none;
+  padding: 2vw;
   background-color: #121212ff;
   border-radius: 19px;
 }
 
 .results {
+  margin: 3vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  padding: 2vw 0 0 5vw;
+  border: 2px solid #b7813fff;
+  border-radius: 19px;
+  background-image: URL("/shr.jpg");
+  background-size: cover;
+  font-family: 'Times New Roman', Times, serif;
 }

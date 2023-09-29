@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import styles from "../page.module.css";
 import Image from "next/image";
 import Link from "next/link";
+import {FaTrashAlt} from 'react-icons/fa'
 
 function Test() {
   const [hufflepuff, setHuffleP] = useState(0);
@@ -10,6 +11,12 @@ function Test() {
   const [gryffindor, setGryffindor] = useState(0);
   const [slytherin, setSlytherin] = useState(0);
 
+  const onClear = () => {
+    setHuffleP(0);
+    setRavenC(0);
+    setGryffindor(0);
+    setSlytherin(0);
+  }
   return (
     <div>
       <div
@@ -22,7 +29,7 @@ function Test() {
         className={styles.nav}
       >
         <Link href="/" style={{textDecoration: "none"}}>
-          <h2 style={{ color: "#ffffff"}}>Home</h2>
+          <h2 id={styles.home}style={{ color: "#ffffff", fontSize: "5vw"}}>Home</h2>
         </Link>
         <Link href="/">
           <Image
@@ -41,7 +48,7 @@ function Test() {
         </h1>
         <button id={styles.answer} onClick={() => setRavenC(ravenclaw - 2)}>
           <p style={{ color: "#ffffff", fontSize: "2.5vh" }}>
-            A&#41; Use my intelligence and wit to find a clever solution.
+            <b>A&#41;</b> Use my intelligence and wit to find a clever solution.
           </p>
         </button>
         <h3 style={{ color: "#ffffff" }}>Or</h3>
@@ -50,7 +57,7 @@ function Test() {
           onClick={() => setGryffindor(gryffindor - 2)}
         >
           <p style={{ color: "#ffffff", fontSize: "2.5vh" }}>
-            B&#41; Trust my instincts and rely on my courage to face it head-on.{" "}
+            <b>B&#41;</b> Trust my instincts and rely on my courage to face it head-on.{" "}
           </p>
         </button>
       </div>
@@ -60,7 +67,7 @@ function Test() {
         </h1>
         <button id={styles.answer} onClick={() => setHuffleP(hufflepuff - 2)}>
           <p style={{ color: "#ffffff", fontSize: "2.5vh" }}>
-            A&#41; A mysterious journey through an ancient forest.
+            <b>A&#41;</b> A mysterious journey through an ancient forest.
           </p>
         </button>
         <h3 style={{ color: "#ffffff" }}>Or</h3>
@@ -69,7 +76,7 @@ function Test() {
           onClick={() => setGryffindor(gryffindor - 2)}
         >
           <p style={{ color: "#ffffff", fontSize: "2.5vh" }}>
-            B&#41; An exciting quest full of danger and challenges.
+            <b>B&#41;</b> An exciting quest full of danger and challenges.
           </p>
         </button>
       </div>
@@ -79,13 +86,13 @@ function Test() {
         </h1>
         <button id={styles.answer} onClick={() => setHuffleP(hufflepuff - 2)}>
           <p style={{ color: "#ffffff", fontSize: "2.5vh" }}>
-            A&#41; Loyalty and unwavering support.
+            <b>A&#41;</b> Loyalty and unwavering support.
           </p>
         </button>
         <h3 style={{ color: "#ffffff" }}>Or</h3>
         <button id={styles.answer} onClick={() => setRavenC(ravenclaw - 2)}>
           <p style={{ color: "#ffffff", fontSize: "2.5vh" }}>
-            B&#41; Intelligence and the ability to challenge me intellectually.{" "}
+            <b>B&#41;</b> Intelligence and the ability to challenge me intellectually.{" "}
           </p>
         </button>
       </div>
@@ -95,7 +102,7 @@ function Test() {
         </h1>
         <button id={styles.answer} onClick={() => setHuffleP(hufflepuff - 2)}>
           <p style={{ color: "#ffffff", fontSize: "2.5vh" }}>
-            A&#41; Ensuring everyone gets along and feels included.
+            <b>A&#41;</b> Ensuring everyone gets along and feels included.
           </p>
         </button>
         <h3 style={{ color: "#ffffff" }}>Or</h3>
@@ -104,7 +111,7 @@ function Test() {
           onClick={() => setGryffindor(gryffindor - 2)}
         >
           <p style={{ color: "#ffffff", fontSize: "2.5vh" }}>
-            B&#41; Taking the lead and organizing the team.{" "}
+            <b>B&#41;</b> Taking the lead and organizing the team.{" "}
           </p>
         </button>
       </div>
@@ -114,13 +121,13 @@ function Test() {
         </h1>
         <button id={styles.answer} onClick={() => setRavenC(ravenclaw - 2)}>
           <p style={{ color: "#ffffff", fontSize: "2.5vh" }}>
-            A&#41; Take it to the library to see if anyone knows its history.
+            <b>A&#41;</b> Take it to the library to see if anyone knows its history.
           </p>
         </button>
         <h3 style={{ color: "#ffffff" }}>Or</h3>
         <button id={styles.answer} onClick={() => setSlytherin(slytherin - 2)}>
           <p style={{ color: "#ffffff", fontSize: "2.5vh" }}>
-            B&#41; Open it to see if there are any hidden secrets inside.{" "}
+            <b>B&#41;</b> Open it to see if there are any hidden secrets inside.{" "}
           </p>
         </button>
       </div>
@@ -130,13 +137,13 @@ function Test() {
         </h1>
         <button id={styles.answer} onClick={() => setHuffleP(hufflepuff - 2)}>
           <p style={{ color: "#ffffff", fontSize: "2.5vh" }}>
-            A&#41; Kindness and compassion for others.
+            <b>A&#41;</b> Kindness and compassion for others.
           </p>
         </button>
         <h3 style={{ color: "#ffffff" }}>Or</h3>
         <button id={styles.answer} onClick={() => setSlytherin(slytherin - 2)}>
           <p style={{ color: "#ffffff", fontSize: "2.5vh" }}>
-            B&#41; Ambition and a desire for greatness.{" "}
+            <b>B&#41;</b> Ambition and a desire for greatness.{" "}
           </p>
         </button>
       </div>
@@ -146,7 +153,7 @@ function Test() {
         </h1>
         <button id={styles.answer} onClick={() => setRavenC(ravenclaw - 2)}>
           <p style={{ color: "#ffffff", fontSize: "2.5vh" }}>
-            A&#41; Curled up with a good book in a cozy corner.
+            <b>A&#41;</b> Curled up with a good book in a cozy corner.
           </p>
         </button>
         <h3 style={{ color: "#ffffff" }}>Or</h3>
@@ -155,7 +162,7 @@ function Test() {
           onClick={() => setGryffindor(gryffindor - 2)}
         >
           <p style={{ color: "#ffffff", fontSize: "2.5vh" }}>
-            B&#41; Exploring new places or trying something adventurous.{" "}
+            <b>B&#41;</b> Exploring new places or trying something adventurous.{" "}
           </p>
         </button>
       </div>
@@ -165,13 +172,13 @@ function Test() {
         </h1>
         <button id={styles.answer} onClick={() => setHuffleP(hufflepuff - 2)}>
           <p style={{ color: "#ffffff", fontSize: "2.5vh" }}>
-            A&#41; Its ability to bring joy and happiness to people.
+            <b>A&#41;</b> Its ability to bring joy and happiness to people.
           </p>
         </button>
         <h3 style={{ color: "#ffffff" }}>Or</h3>
         <button id={styles.answer} onClick={() => setSlytherin(slytherin - 2)}>
           <p style={{ color: "#ffffff", fontSize: "2.5vh" }}>
-            B&#41; Its power and potential for achieving great feats.{" "}
+            <b>B&#41;</b> Its power and potential for achieving great feats.{" "}
           </p>
         </button>
       </div>
@@ -181,7 +188,7 @@ function Test() {
         </h1>
         <button id={styles.answer} onClick={() => setHuffleP(hufflepuff - 2)}>
           <p style={{ color: "#ffffff", fontSize: "2.5vh" }}>
-            A&#41; Trying to find a peaceful resolution through negotiation.
+            <b>A&#41;</b> Trying to find a peaceful resolution through negotiation.
           </p>
         </button>
         <h3 style={{ color: "#ffffff" }}>Or</h3>
@@ -190,7 +197,7 @@ function Test() {
           onClick={() => setGryffindor(gryffindor - 2)}
         >
           <p style={{ color: "#ffffff", fontSize: "2.5vh" }}>
-            B&#41; Standing up and facing the challenge head-on, no matter the
+            <b>B&#41;</b> Standing up and facing the challenge head-on, no matter the
             risks.{" "}
           </p>
         </button>
@@ -201,29 +208,31 @@ function Test() {
         </h1>
         <button id={styles.answer} onClick={() => setHuffleP(hufflepuff - 2)}>
           <p style={{ color: "#ffffff", fontSize: "2.5vh" }}>
-            A&#41; To make lasting, meaningful connections with others.
+            <b>A&#41;</b> To make lasting, meaningful connections with others.
           </p>
         </button>
         <h3 style={{ color: "#ffffff" }}>Or</h3>
         <button id={styles.answer} onClick={() => setSlytherin(slytherin - 2)}>
           <p style={{ color: "#ffffff", fontSize: "2.5vh" }}>
-            B&#41; To achieve greatness and leave a lasting legacy.{" "}
+            <b>B&#41;</b> To achieve greatness and leave a lasting legacy.{" "}
           </p>
         </button>
       </div>
       <div className={styles.results}>
-        <p style={{ color: "#ffffff", fontSize: "5vw" }}>
+        <p style={{ color: "#000000", fontSize: "7vw" }}>
           Gryffindor: {gryffindor}
         </p>
-        <p style={{ color: "#ffffff", fontSize: "5vw" }}>
+        <p style={{ color: "#000000", fontSize: "7vw" }}>
           RavenClaw: {ravenclaw}
         </p>
-        <p style={{ color: "#ffffff", fontSize: "5vw" }}>
+        <p style={{ color: "#000000", fontSize: "7vw" }}>
           HufflePuff: {hufflepuff}
         </p>
-        <p style={{ color: "#ffffff", fontSize: "5vw" }}>
+        <p style={{ color: "#000000", fontSize: "7vw" }}>
           Slytherin: {slytherin}
         </p>
+        <h1 onClick={onClear} style={{color: "#800000", fontSize: "10vw", marginLeft: "35vw", cursor: "pointer"}}><FaTrashAlt /></h1>
+        <code style={{fontSize: "2vw", margin: "2vw"}}><i>How to Play: Your house is the highest score above. For example &quot;-2&quot; would be a higher score then &quot;-8&quot;.</i></code>
       </div>
     </div>
   );
