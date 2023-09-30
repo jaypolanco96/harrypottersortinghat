@@ -38,7 +38,7 @@ export default function Home() {
           </div>
         </div>
         <div className={styles.start}>
-          <Link href="/test">
+          <Link href="/welcome">
             <button id={styles.strtbtn}></button>
           </Link>
           <code style={{ margin: "5vw", color: "#b7813fff" }}>

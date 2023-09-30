@@ -1,11 +1,8 @@
-"use client";
 import React, { useState, useRef } from "react";
 import styles from "../page.module.css";
-import Image from "next/image";
-import Link from "next/link";
 import { FaTrashAlt } from "react-icons/fa";
 
-function Test() {
+function Questions() {
   const [hufflepuff, setHuffleP] = useState(0);
   const [ravenclaw, setRavenC] = useState(0);
   const [gryffindor, setGryffindor] = useState(0);
@@ -58,7 +55,6 @@ function Test() {
   const handleButtonClick10 = () => {
     targetRef10.current.scrollIntoView({ behavior: "smooth" });
   };
-
   return (
     <div
       style={{
@@ -69,38 +65,6 @@ function Test() {
         width: "100%",
       }}
     >
-      <Image
-        src="/hps.png"
-        width={89}
-        height={89}
-        alt="public/hps.png"
-        style={{ marginRight: "60vw", marginBottom: "-8vh" }}
-      />
-      <Link href="/" style={{ textDecoration: "none" }}>
-        <h2 id={styles.home} style={{ color: "#ffffff", fontSize: "5vw" }}>
-          Home
-        </h2>
-      </Link>
-      <div
-        style={{
-          width: "100%",
-          display: "flex",
-          flexDirection: "row",
-          justifyContent: "center",
-          alignItems: "center",
-        }}
-        className={styles.nav}
-      >
-        <Link href="/">
-          <Image
-            src="/hwc.png"
-            width={89}
-            height={89}
-            alt="public/hwc.png"
-            style={{ borderRadius: "19px" }}
-          />
-        </Link>
-      </div>
       <div className={styles.questions}>
         <h1 style={{ color: "#ffffff" }}>
           1. When faced with a difficult problem, which approach would you be
@@ -422,4 +386,4 @@ function Test() {
   );
 }
 
-export default Test;
+export default Questions;

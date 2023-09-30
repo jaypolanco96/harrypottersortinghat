@@ -62,13 +62,53 @@
 }
 
 .results {
-  margin: 3vw;
+  margin: 3vw 3vw 17vw 3vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 2vw 0 0 5vw;
-  border-radius: 4.75px;
+  border-radius: 3px;
   background-image: URL("/shr.jpg");
   background-size: cover;
   font-family: 'Times New Roman', Times, serif;
+}
+
+.signupbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  margin: 3vw 0 0 0;
+}
+
+.signup{
+  margin-bottom: 17vw;
+  height: 44vw;
+  width: 89vw;
+  border-radius: 19px;
+  background-image: URL("/signup.png");
+  background-size: cover;
+  border-style: none;
+  cursor: pointer;
+  transition: filter 0.3s ease;
+}
+
+.signup:hover {
+  filter: brightness(0.7);
+}
+
+.footer2 {
+  margin: 0vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #242424;
+  height: 10vw;
+  width: 100%;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  border-radius: 19px 19px 0 0;
 }
