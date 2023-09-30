@@ -19,14 +19,32 @@ export default function Home() {
             alt="public/sh.gif"
             style={{ borderRadius: "19px" }}
           />
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "row",
+              justifyContent: "space-between",
+              alignItems: "center",
+              margin: "1vw 3vw 0 3vw",
+            }}
+          >
+            <Image
+              src="/giphy.png"
+              width={115}
+              height={25}
+              alt="public/giphy.png"
+              style={{ borderRadius: "19px", marginTop: "1vw" }}
+            />
+            <code style={{ color: "#ffffff" }}>Credit: &#64;Poupoutte</code>
+          </div>
         </div>
         <div className={styles.start}>
           <Link href="/test">
             <button id={styles.strtbtn}></button>
           </Link>
-          <code style={{margin: "5vw", color: "#b7813fff"}}>
-            By clicking &quot;Start&quot;, you confirm reading and agreeing to the
-            disclaimer on this page. Proceed with acknowledgment.
+          <code style={{ margin: "5vw", color: "#b7813fff" }}>
+            By clicking &quot;Start&quot;, you confirm reading and agreeing to
+            the disclaimer on this page. Proceed with acknowledgment.
           </code>
         </div>
         <div className={styles.footer}>
@@ -50,8 +68,8 @@ export default function Home() {
               assessments. It is not a substitute for seeking advice from a
               licensed professional. 6. Age Restrictions: This test is suitable
               for all ages, but younger participants may require parental
-              guidance due to the website&apos;s Harry Potter theme. 7. Respect and
-              Kindness: We encourage users to be respectful and kind in all
+              guidance due to the website&apos;s Harry Potter theme. 7. Respect
+              and Kindness: We encourage users to be respectful and kind in all
               interactions related to this test. Any form of harassment,
               discrimination, or inappropriate behavior will not be tolerated.
               8. Intellectual Property: All intellectual property rights
