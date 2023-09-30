@@ -271,7 +271,7 @@ function Test() {
         <code style={{ fontSize: "2vw", margin: "2vw" }}>
           <i>
             How to Play: Your house is the highest score above. For example
-            &quot;-2&quot; would be a higher score then &quot;-8&quot;.
+            &quot;-2&quot; would be a higher score than &quot;-8&quot;.
           </i>
         </code>
       </div>
