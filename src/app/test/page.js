@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import styles from "../page.module.css";
 import Image from "next/image";
 import Link from "next/link";
@@ -18,8 +18,45 @@ function Test() {
     setSlytherin(0);
   };
 
-  const onActive = () => {
-    var option = document.getElementById;
+  const targetRef = useRef();
+  const handleButtonClick = () => {
+    targetRef.current.scrollIntoView({ behavior: "smooth" });
+  };
+  const targetRef2 = useRef();
+  const handleButtonClick2 = () => {
+    targetRef2.current.scrollIntoView({ behavior: "smooth" });
+  };
+  const targetRef3 = useRef();
+  const handleButtonClick3 = () => {
+    targetRef3.current.scrollIntoView({ behavior: "smooth" });
+  };
+  const targetRef4 = useRef();
+  const handleButtonClick4 = () => {
+    targetRef4.current.scrollIntoView({ behavior: "smooth" });
+  };
+  const targetRef5 = useRef();
+  const handleButtonClick5 = () => {
+    targetRef5.current.scrollIntoView({ behavior: "smooth" });
+  };
+  const targetRef6 = useRef();
+  const handleButtonClick6 = () => {
+    targetRef6.current.scrollIntoView({ behavior: "smooth" });
+  };
+  const targetRef7 = useRef();
+  const handleButtonClick7 = () => {
+    targetRef7.current.scrollIntoView({ behavior: "smooth" });
+  };
+  const targetRef8 = useRef();
+  const handleButtonClick8 = () => {
+    targetRef8.current.scrollIntoView({ behavior: "smooth" });
+  };
+  const targetRef9 = useRef();
+  const handleButtonClick9 = () => {
+    targetRef9.current.scrollIntoView({ behavior: "smooth" });
+  };
+  const targetRef10 = useRef();
+  const handleButtonClick10 = () => {
+    targetRef10.current.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
@@ -73,7 +110,7 @@ function Test() {
           className={styles.answer}
           onClick={() => {
             setRavenC(ravenclaw - 2);
-            onActive();
+            handleButtonClick();
           }}
         >
           <p style={{ color: "#ffffff", fontSize: "2.5vh" }}>
@@ -83,7 +120,10 @@ function Test() {
         <h3 style={{ color: "#ffffff" }}>Or</h3>
         <button
           className={styles.answer}
-          onClick={() => setGryffindor(gryffindor - 2)}
+          onClick={() => {
+            setGryffindor(gryffindor - 2);
+            handleButtonClick();
+          }}
         >
           <p style={{ color: "#ffffff", fontSize: "2.5vh" }}>
             <b>B&#41;</b> Trust my instincts and rely on my courage to face it
@@ -91,13 +131,16 @@ function Test() {
           </p>
         </button>
       </div>
-      <div className={styles.questions}>
+      <div ref={targetRef} className={styles.questions}>
         <h1 style={{ color: "#ffffff" }}>
           2. What kind of adventure would you most enjoy?
         </h1>
         <button
           className={styles.answer}
-          onClick={() => setHuffleP(hufflepuff - 2)}
+          onClick={() => {
+            setHuffleP(hufflepuff - 2);
+            handleButtonClick2();
+          }}
         >
           <p style={{ color: "#ffffff", fontSize: "2.5vh" }}>
             <b>A&#41;</b> A mysterious journey through an ancient forest.
@@ -106,20 +149,26 @@ function Test() {
         <h3 style={{ color: "#ffffff" }}>Or</h3>
         <button
           className={styles.answer}
-          onClick={() => setGryffindor(gryffindor - 2)}
+          onClick={() => {
+            setGryffindor(gryffindor - 2);
+            handleButtonClick2();
+          }}
         >
           <p style={{ color: "#ffffff", fontSize: "2.5vh" }}>
             <b>B&#41;</b> An exciting quest full of danger and challenges.
           </p>
         </button>
       </div>
-      <div className={styles.questions}>
+      <div ref={targetRef2} className={styles.questions}>
         <h1 style={{ color: "#ffffff" }}>
           3. What trait do you value most in a friend?
         </h1>
         <button
           className={styles.answer}
-          onClick={() => setHuffleP(hufflepuff - 2)}
+          onClick={() => {
+            setHuffleP(hufflepuff - 2);
+            handleButtonClick3();
+          }}
         >
           <p style={{ color: "#ffffff", fontSize: "2.5vh" }}>
             <b>A&#41;</b> Loyalty and unwavering support.
@@ -128,7 +177,10 @@ function Test() {
         <h3 style={{ color: "#ffffff" }}>Or</h3>
         <button
           className={styles.answer}
-          onClick={() => setRavenC(ravenclaw - 2)}
+          onClick={() => {
+            setRavenC(ravenclaw - 2);
+            handleButtonClick3();
+          }}
         >
           <p style={{ color: "#ffffff", fontSize: "2.5vh" }}>
             <b>B&#41;</b> Intelligence and the ability to challenge me
@@ -136,13 +188,16 @@ function Test() {
           </p>
         </button>
       </div>
-      <div className={styles.questions}>
+      <div ref={targetRef3} className={styles.questions}>
         <h1 style={{ color: "#ffffff" }}>
           4. In a group project, which role would you naturally take on?
         </h1>
         <button
           className={styles.answer}
-          onClick={() => setHuffleP(hufflepuff - 2)}
+          onClick={() => {
+            setHuffleP(hufflepuff - 2);
+            handleButtonClick4();
+          }}
         >
           <p style={{ color: "#ffffff", fontSize: "2.5vh" }}>
             <b>A&#41;</b> Ensuring everyone gets along and feels included.
@@ -151,20 +206,26 @@ function Test() {
         <h3 style={{ color: "#ffffff" }}>Or</h3>
         <button
           className={styles.answer}
-          onClick={() => setGryffindor(gryffindor - 2)}
+          onClick={() => {
+            setGryffindor(gryffindor - 2);
+            handleButtonClick4();
+          }}
         >
           <p style={{ color: "#ffffff", fontSize: "2.5vh" }}>
             <b>B&#41;</b> Taking the lead and organizing the team.{" "}
           </p>
         </button>
       </div>
-      <div className={styles.questions}>
+      <div ref={targetRef4} className={styles.questions}>
         <h1 style={{ color: "#ffffff" }}>
           5. What would you do if you found an old, dusty book with no title?
         </h1>
         <button
           className={styles.answer}
-          onClick={() => setRavenC(ravenclaw - 2)}
+          onClick={() => {
+            setRavenC(ravenclaw - 2);
+            handleButtonClick5();
+          }}
         >
           <p style={{ color: "#ffffff", fontSize: "2.5vh" }}>
             <b>A&#41;</b> Take it to the library to see if anyone knows its
@@ -174,20 +235,26 @@ function Test() {
         <h3 style={{ color: "#ffffff" }}>Or</h3>
         <button
           className={styles.answer}
-          onClick={() => setSlytherin(slytherin - 2)}
+          onClick={() => {
+            setSlytherin(slytherin - 2);
+            handleButtonClick5();
+          }}
         >
           <p style={{ color: "#ffffff", fontSize: "2.5vh" }}>
             <b>B&#41;</b> Open it to see if there are any hidden secrets inside.{" "}
           </p>
         </button>
       </div>
-      <div className={styles.questions}>
+      <div ref={targetRef5} className={styles.questions}>
         <h1 style={{ color: "#ffffff" }}>
           6. Which quality do you find most admirable in a wizard or witch?
         </h1>
         <button
           className={styles.answer}
-          onClick={() => setHuffleP(hufflepuff - 2)}
+          onClick={() => {
+            setHuffleP(hufflepuff - 2);
+            handleButtonClick6();
+          }}
         >
           <p style={{ color: "#ffffff", fontSize: "2.5vh" }}>
             <b>A&#41;</b> Kindness and compassion for others.
@@ -196,20 +263,23 @@ function Test() {
         <h3 style={{ color: "#ffffff" }}>Or</h3>
         <button
           className={styles.answer}
-          onClick={() => setSlytherin(slytherin - 2)}
+          onClick={() => {
+            setSlytherin(slytherin - 2);
+            handleButtonClick6();
+          }}
         >
           <p style={{ color: "#ffffff", fontSize: "2.5vh" }}>
             <b>B&#41;</b> Ambition and a desire for greatness.{" "}
           </p>
         </button>
       </div>
-      <div className={styles.questions}>
+      <div ref={targetRef6} className={styles.questions}>
         <h1 style={{ color: "#ffffff" }}>
           7. Whats your favorite way to spend a rainy day?
         </h1>
         <button
           className={styles.answer}
-          onClick={() => setRavenC(ravenclaw - 2)}
+          onClick={() => {setRavenC(ravenclaw - 2); handleButtonClick7();}}
         >
           <p style={{ color: "#ffffff", fontSize: "2.5vh" }}>
             <b>A&#41;</b> Curled up with a good book in a cozy corner.
@@ -218,20 +288,20 @@ function Test() {
         <h3 style={{ color: "#ffffff" }}>Or</h3>
         <button
           className={styles.answer}
-          onClick={() => setGryffindor(gryffindor - 2)}
+          onClick={() => {setGryffindor(gryffindor - 2); handleButtonClick7();}}
         >
           <p style={{ color: "#ffffff", fontSize: "2.5vh" }}>
             <b>B&#41;</b> Exploring new places or trying something adventurous.{" "}
           </p>
         </button>
       </div>
-      <div className={styles.questions}>
+      <div ref={targetRef7} className={styles.questions}>
         <h1 style={{ color: "#ffffff" }}>
           8. What do you value most in a magical object?
         </h1>
         <button
           className={styles.answer}
-          onClick={() => setHuffleP(hufflepuff - 2)}
+          onClick={() => {setHuffleP(hufflepuff - 2); handleButtonClick8();}}
         >
           <p style={{ color: "#ffffff", fontSize: "2.5vh" }}>
             <b>A&#41;</b> Its ability to bring joy and happiness to people.
@@ -240,20 +310,20 @@ function Test() {
         <h3 style={{ color: "#ffffff" }}>Or</h3>
         <button
           className={styles.answer}
-          onClick={() => setSlytherin(slytherin - 2)}
+          onClick={() => {setSlytherin(slytherin - 2); handleButtonClick8();}}
         >
           <p style={{ color: "#ffffff", fontSize: "2.5vh" }}>
             <b>B&#41;</b> Its power and potential for achieving great feats.{" "}
           </p>
         </button>
       </div>
-      <div className={styles.questions}>
+      <div ref={targetRef8} className={styles.questions}>
         <h1 style={{ color: "#ffffff" }}>
           9. Whats your approach to dealing with a difficult adversary?
         </h1>
         <button
           className={styles.answer}
-          onClick={() => setHuffleP(hufflepuff - 2)}
+          onClick={() => {setHuffleP(hufflepuff - 2); handleButtonClick9();}}
         >
           <p style={{ color: "#ffffff", fontSize: "2.5vh" }}>
             <b>A&#41;</b> Trying to find a peaceful resolution through
@@ -263,7 +333,7 @@ function Test() {
         <h3 style={{ color: "#ffffff" }}>Or</h3>
         <button
           className={styles.answer}
-          onClick={() => setGryffindor(gryffindor - 2)}
+          onClick={() => {setGryffindor(gryffindor - 2); handleButtonClick9();}}
         >
           <p style={{ color: "#ffffff", fontSize: "2.5vh" }}>
             <b>B&#41;</b> Standing up and facing the challenge head-on, no
@@ -271,13 +341,13 @@ function Test() {
           </p>
         </button>
       </div>
-      <div className={styles.questions}>
+      <div ref={targetRef9} className={styles.questions}>
         <h1 style={{ color: "#ffffff" }}>
           10. Whats your greatest desire in life?
         </h1>
         <button
           className={styles.answer}
-          onClick={() => setHuffleP(hufflepuff - 2)}
+          onClick={() => {setHuffleP(hufflepuff - 2); handleButtonClick10();}}
         >
           <p style={{ color: "#ffffff", fontSize: "2.5vh" }}>
             <b>A&#41;</b> To make lasting, meaningful connections with others.
@@ -286,14 +356,14 @@ function Test() {
         <h3 style={{ color: "#ffffff" }}>Or</h3>
         <button
           className={styles.answer}
-          onClick={() => setSlytherin(slytherin - 2)}
+          onClick={() => {setSlytherin(slytherin - 2); handleButtonClick10();}}
         >
           <p style={{ color: "#ffffff", fontSize: "2.5vh" }}>
             <b>B&#41;</b> To achieve greatness and leave a lasting legacy.{" "}
           </p>
         </button>
       </div>
-      <div className={styles.results}>
+      <div ref={targetRef10} className={styles.results}>
         <p style={{ color: "#000000", fontSize: "7vw" }}>
           Gryffindor: {gryffindor}
         </p>
