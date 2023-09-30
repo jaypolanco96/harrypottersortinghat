@@ -67,8 +67,7 @@
   flex-direction: column;
   justify-content: center;
   padding: 2vw 0 0 5vw;
-  border: 2px solid #b7813fff;
-  border-radius: 19px;
+  border-radius: 4.75px;
   background-image: URL("/shr.jpg");
   background-size: cover;
   font-family: 'Times New Roman', Times, serif;

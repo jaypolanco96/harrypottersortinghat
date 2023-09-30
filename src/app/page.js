@@ -25,7 +25,7 @@ export default function Home() {
               flexDirection: "row",
               justifyContent: "space-between",
               alignItems: "center",
-              margin: "1vw 3vw 0 3vw",
+              margin: "2vw 2vw 0 2vw",
             }}
           >
             <Image
@@ -33,7 +33,6 @@ export default function Home() {
               width={115}
               height={25}
               alt="public/giphy.png"
-              style={{ borderRadius: "19px", marginTop: "1vw" }}
             />
             <code style={{ color: "#ffffff" }}>Credit: &#64;Poupoutte</code>
           </div>

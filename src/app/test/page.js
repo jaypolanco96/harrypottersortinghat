@@ -279,7 +279,10 @@ function Test() {
         </h1>
         <button
           className={styles.answer}
-          onClick={() => {setRavenC(ravenclaw - 2); handleButtonClick7();}}
+          onClick={() => {
+            setRavenC(ravenclaw - 2);
+            handleButtonClick7();
+          }}
         >
           <p style={{ color: "#ffffff", fontSize: "2.5vh" }}>
             <b>A&#41;</b> Curled up with a good book in a cozy corner.
@@ -288,7 +291,10 @@ function Test() {
         <h3 style={{ color: "#ffffff" }}>Or</h3>
         <button
           className={styles.answer}
-          onClick={() => {setGryffindor(gryffindor - 2); handleButtonClick7();}}
+          onClick={() => {
+            setGryffindor(gryffindor - 2);
+            handleButtonClick7();
+          }}
         >
           <p style={{ color: "#ffffff", fontSize: "2.5vh" }}>
             <b>B&#41;</b> Exploring new places or trying something adventurous.{" "}
@@ -301,7 +307,10 @@ function Test() {
         </h1>
         <button
           className={styles.answer}
-          onClick={() => {setHuffleP(hufflepuff - 2); handleButtonClick8();}}
+          onClick={() => {
+            setHuffleP(hufflepuff - 2);
+            handleButtonClick8();
+          }}
         >
           <p style={{ color: "#ffffff", fontSize: "2.5vh" }}>
             <b>A&#41;</b> Its ability to bring joy and happiness to people.
@@ -310,7 +319,10 @@ function Test() {
         <h3 style={{ color: "#ffffff" }}>Or</h3>
         <button
           className={styles.answer}
-          onClick={() => {setSlytherin(slytherin - 2); handleButtonClick8();}}
+          onClick={() => {
+            setSlytherin(slytherin - 2);
+            handleButtonClick8();
+          }}
         >
           <p style={{ color: "#ffffff", fontSize: "2.5vh" }}>
             <b>B&#41;</b> Its power and potential for achieving great feats.{" "}
@@ -323,7 +335,10 @@ function Test() {
         </h1>
         <button
           className={styles.answer}
-          onClick={() => {setHuffleP(hufflepuff - 2); handleButtonClick9();}}
+          onClick={() => {
+            setHuffleP(hufflepuff - 2);
+            handleButtonClick9();
+          }}
         >
           <p style={{ color: "#ffffff", fontSize: "2.5vh" }}>
             <b>A&#41;</b> Trying to find a peaceful resolution through
@@ -333,7 +348,10 @@ function Test() {
         <h3 style={{ color: "#ffffff" }}>Or</h3>
         <button
           className={styles.answer}
-          onClick={() => {setGryffindor(gryffindor - 2); handleButtonClick9();}}
+          onClick={() => {
+            setGryffindor(gryffindor - 2);
+            handleButtonClick9();
+          }}
         >
           <p style={{ color: "#ffffff", fontSize: "2.5vh" }}>
             <b>B&#41;</b> Standing up and facing the challenge head-on, no
@@ -347,7 +365,10 @@ function Test() {
         </h1>
         <button
           className={styles.answer}
-          onClick={() => {setHuffleP(hufflepuff - 2); handleButtonClick10();}}
+          onClick={() => {
+            setHuffleP(hufflepuff - 2);
+            handleButtonClick10();
+          }}
         >
           <p style={{ color: "#ffffff", fontSize: "2.5vh" }}>
             <b>A&#41;</b> To make lasting, meaningful connections with others.
@@ -356,7 +377,10 @@ function Test() {
         <h3 style={{ color: "#ffffff" }}>Or</h3>
         <button
           className={styles.answer}
-          onClick={() => {setSlytherin(slytherin - 2); handleButtonClick10();}}
+          onClick={() => {
+            setSlytherin(slytherin - 2);
+            handleButtonClick10();
+          }}
         >
           <p style={{ color: "#ffffff", fontSize: "2.5vh" }}>
             <b>B&#41;</b> To achieve greatness and leave a lasting legacy.{" "}
@@ -387,7 +411,7 @@ function Test() {
         >
           <FaTrashAlt />
         </h1>
-        <code style={{ fontSize: "2vw", margin: "2vw" }}>
+        <code style={{ fontSize: "2vw", margin: "3vw", color: "#000000" }}>
           <i>
             How to Play: Your house is the highest score above. For example
             &quot;-2&quot; would be a higher score than &quot;-8&quot;.
