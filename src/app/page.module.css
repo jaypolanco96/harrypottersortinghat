@@ -51,11 +51,12 @@
   padding: 6vw;
 }
 
-#answer {
+.answer {
   border-style: none;
   padding: 2vw;
   background-color: #121212ff;
   border-radius: 19px;
+  cursor: pointer;
 }
 
 .results {
